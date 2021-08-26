@@ -1,0 +1,55 @@
+<p-toast></p-toast>
+<nb-card>
+  <nb-card-body>
+    <p-toolbar>
+      <ng-template pTemplate="right">
+        <button
+          nbButton
+          pRipple
+          outline
+          status="primary"
+          label="Ajouter Fournisseur"
+          class="p-button-success p-mr-2"
+          (click)="openNew()"
+          routerLink="edit/0"
+        >
+          <nb-icon icon="plus"></nb-icon>
+          Ajouter Fournisseur
+        </button>
+      </ng-template>
+    </p-toolbar>
+
+    <p-confirmDialog></p-confirmDialog>
+    <p-table [value]="supps">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Fournisseur</th>
+          <th>Id</th>
+          <th>NumeroFacture</th>
+          <th>MontantTTC</th>
+          <th>Categorie</th>
+          <th>Edit</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-supplier>
+        <tr>
+          <td>{{ supplier.fournisseur }}</td>
+          <td>{{ supplier.id }}</td>
+          <td>{{ supplier.numeroFacture }}</td>
+          <td>{{ supplier.montantTTC }}</td>
+          <td>{{ supplier.categorieOperation }}</td>
+          <td>
+            <button
+              nbButton
+              status="info"
+              (click)="editFournisseur(supplier.id)"
+            >
+              <nb-icon icon="edit"></nb-icon>
+              Edit
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </nb-card-body>
+</nb-card>

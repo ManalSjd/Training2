@@ -1,0 +1,85 @@
+<nb-card>
+  <nb-card-body>
+    <form style="margin-top: 50px" class="formulaire">
+      <p>
+        <label for="client">Client </label>
+        <input
+          type="text"
+          nbInput
+          shape="semi-round"
+          [(ngModel)]="invoice.client"
+          name="invoice.client"
+          id="client"
+          required
+          autofocus
+        />
+        <small class="p-invalid" *ngIf="submitted && !invoice.client"
+          >client is required.</small
+        >
+      </p>
+      <p>
+        <label for="id">ID </label>
+        <input
+          type="text"
+          nbInput
+          shape="semi-round"
+          id="id"
+          [(ngModel)]="invoice.id"
+          name="invoice.id"
+          required
+          autofocus
+        />
+      </p>
+      <p>
+        <label for="statut">Statut </label>
+        <input
+          type="text"
+          nbInput
+          shape="semi-round"
+          id="statut"
+          [(ngModel)]="invoice.statut"
+          name="invoice.statut"
+          required
+          autofocus
+        />
+      </p>
+      <p>
+        <label for="dateEcheance">Date d'écheance</label>
+        <input
+          type="text"
+          nbInput
+          placeholder="choisit date"
+          [nbDatepicker]="dateTimePicker"
+          shape="semi-round"
+          id="dateEcheance"
+          [(ngModel)]="invoice.dateEcheance"
+          name="invoice.dateEcheance"
+          required
+          autofocus
+          fullwidth
+        />
+        <nb-datepicker #dateTimePicker></nb-datepicker>
+      </p>
+      <p>
+        <label for="conditions de paiement">Conditions de paiement</label>
+        <nb-select placeholder="choix de paiement " shape="semi-round">
+          <nb-option value="1"> 50% à la commande et 50% après 60jr</nb-option>
+          <nb-option value="2"> avance 60</nb-option>
+          <nb-option value="3">avance 30</nb-option>
+        </nb-select>
+      </p>
+
+      <div class="panel-footer">
+        <button
+          nbButton
+          shape="round"
+          type="submit"
+          class="btn btn-primary"
+          (click)="saveFacturat('save', 'success')"
+        >
+          Save
+        </button>
+      </div>
+    </form>
+  </nb-card-body>
+</nb-card>

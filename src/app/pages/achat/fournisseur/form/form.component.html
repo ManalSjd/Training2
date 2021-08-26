@@ -1,0 +1,143 @@
+<nb-card>
+  <nb-card-body class="myprofil">
+    <div class="container">
+      <nb-tabset fullWidth>
+        <nb-tab tabIcon="person-outline" tabTitle="Profil">
+          <div class="row">
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="RaisonSociale">Raison Sociale </label><br />
+              <input
+                type="text"
+                nbInput
+                placeholder=""
+                [(ngModel)]="provider.RaisonSocial"
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="type">Type</label>
+              <br />
+              <nb-select
+                placeholder="Personne Physique/Personne Morale"
+                [(ngModel)]="selectedItemNgModel"
+              >
+                <nb-option value="1">Personne Physique</nb-option>
+                <nb-option value="2">Personne Morale</nb-option>
+              </nb-select>
+            </div>
+          </div>
+        </nb-tab>
+        <nb-tab tabIcon="info-outline" tabTitle="Informations" c>
+          <div class="row">
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Id">Id</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.id"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Fournisseur">Fournisseur</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.fournisseur"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="libelle">libelle</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.libelle"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="NumeroFacture">Numero Facture</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.numeroFacture"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Etat">Etat</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.etat"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Téléphone">Téléphone</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.telephone"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Email">Email</label>
+              <br />
+              <input
+                type="text"
+                [(ngModel)]="provider.email"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Site Web">Site Web</label><br />
+              <input
+                type="text"
+                [(ngModel)]="provider.siteWeb"
+                nbInput
+                fieldSize="tiny"
+                placeholder=""
+              />
+            </div>
+            <div class="col-sm-6 sol-md-4 col-lg-3 column">
+              <label for="Adresse">Adresse</label><br />
+              <textarea
+                nbInput
+                [(ngModel)]="provider.Adresse"
+                fieldsize="tiny"
+                placeholder=""
+              ></textarea>
+            </div>
+          </div>
+          <br />
+
+          <div class="panel-footer">
+            <button
+              nbButton
+              shape="round"
+              type="submit"
+              size="medium"
+              status="success"
+              class="btn btn-primary"
+              label="Enregistrer"
+              (click)="saveAchat('save', 'success')"
+            >
+              <nb-icon icon="checkmark-circle"></nb-icon>
+              Enregistrer
+            </button>
+          </div>
+        </nb-tab>
+      </nb-tabset>
+    </div>
+  </nb-card-body>
+</nb-card>

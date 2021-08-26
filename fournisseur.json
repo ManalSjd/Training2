@@ -1,0 +1,160 @@
+{
+  "items": [
+    {
+      "dateFacture": "2021-02-25T10:09:41.609",
+      "numeroFacture": "10-10-2020",
+      "fournisseur": "client1",
+      "referenceInterne": "null",
+      "projet": null,
+      "etat": "en retard de 163 jours",
+      "dateEcheance": "2021-03-07T10:09:41.609",
+      "deviseId": null,
+      "resteARegler": 27600,
+      "montantTTC": 27600,
+      "montantHT": 23000,
+      "montantTVA": 4600,
+      "categorieOperation": "Marchandises",
+      "libelle": " tertdfgfd",
+      "delaiLivraison": 2,
+      "dateLivraison": "2021-02-28T01:00:00",
+      "isComptabiliser": false,
+      "id": 38
+    },
+    {
+      "dateFacture": "2021-02-25T10:09:41.609",
+      "numeroFacture": "10-10-2020",
+      "fournisseur": "client1",
+      "referenceInterne": "null",
+      "projet": null,
+      "etat": "Payée",
+      "dateEcheance": "2021-03-07T10:09:41.609",
+      "deviseId": null,
+      "resteARegler": 0,
+      "montantTTC": 0,
+      "montantHT": 0,
+      "montantTVA": 0,
+      "categorieOperation": "Marchandises",
+      "libelle": " tertdfgfd",
+      "delaiLivraison": 2,
+      "dateLivraison": "2021-02-28T01:00:00",
+      "isComptabiliser": false,
+      "id": 39
+    },
+    {
+      "dateFacture": "2020-10-10T00:00:00",
+      "numeroFacture": " 10-10-2020   ",
+      "fournisseur": "client1",
+      "referenceInterne": " 10-10-2020   RemGlobale : 12   ",
+      "projet": "Projet43ML",
+      "etat": "en retard de 311 jours",
+      "dateEcheance": "2020-10-10T00:00:00",
+      "deviseId": 5,
+      "resteARegler": 1222,
+      "montantTTC": 1222,
+      "montantHT": 1000,
+      "montantTVA": 222,
+      "categorieOperation": "Produits",
+      "libelle": " 10-10-2020   ",
+      "delaiLivraison": 12,
+      "dateLivraison": "2020-10-10T00:00:00",
+      "isComptabiliser": false,
+      "id": 13
+    },
+    {
+      "dateFacture": "2020-10-10T00:00:00",
+      "numeroFacture": null,
+      "fournisseur": null,
+      "referenceInterne": "10-10-2020",
+      "projet": null,
+      "etat": "en retard de 311 jours",
+      "dateEcheance": "2020-10-10T00:00:00",
+      "deviseId": null,
+      "resteARegler": 34343,
+      "montantTTC": 34343,
+      "montantHT": 343434,
+      "montantTVA": -309091,
+      "categorieOperation": "Matériel Informatique",
+      "libelle": null,
+      "delaiLivraison": 0,
+      "dateLivraison": "0001-01-01T00:00:00",
+      "isComptabiliser": false,
+      "id": 14
+    },
+    {
+      "dateFacture": "2020-10-10T00:00:00",
+      "numeroFacture": "10-10-2020",
+      "fournisseur": "client1",
+      "referenceInterne": "10-10-2020",
+      "projet": "Projet43ML",
+      "etat": "en retard de 311 jours",
+      "dateEcheance": "2020-10-10T00:00:00",
+      "deviseId": 2,
+      "resteARegler": 10,
+      "montantTTC": 10,
+      "montantHT": 20,
+      "montantTVA": -10,
+      "categorieOperation": "Dépôt Caisse",
+      "libelle": "10-10-2020",
+      "delaiLivraison": 12,
+      "dateLivraison": "2020-10-10T00:00:00",
+      "isComptabiliser": true,
+      "id": 23
+    },
+    {
+      "dateFacture": "2020-10-10T00:00:00",
+      "numeroFacture": "10-10-2020",
+      "fournisseur": "client1",
+      "referenceInterne": "10-10-2020",
+      "projet": "Projet43ML",
+      "etat": "en retard de 311 jours",
+      "dateEcheance": "2020-10-10T00:00:00",
+      "deviseId": 2,
+      "resteARegler": 10,
+      "montantTTC": 10,
+      "montantHT": 10,
+      "montantTVA": 0,
+      "categorieOperation": "Services ",
+      "libelle": "10-10-2020",
+      "delaiLivraison": 2,
+      "dateLivraison": "2020-10-10T00:00:00",
+      "isComptabiliser": false,
+      "id": 24
+    },
+    {
+      "id": 359
+    },
+    {
+      "id": 163
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 259
+    },
+    {
+      "RaisonSocial": "manal",
+      "id": "4562",
+      "fournisseur": "manale",
+      "libelle": "sdfghjkl",
+      "numeroFacture": "794613",
+      "etat": "done"
+    },
+    {
+      "id": 233
+    },
+    {
+      "id": 631
+    },
+    {
+      "id": 314
+    },
+    {
+      "RaisonSocial": "manal3",
+      "id": "752",
+      "fournisseur": "manal",
+      "libelle": "sdfghj",
+      "numeroFacture": "753"
+    }
+  ]
+}
